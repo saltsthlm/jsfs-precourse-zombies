@@ -12,9 +12,9 @@ const createRoom = (capacity: number) => {
 test("room is full", () => {
   const room = createRoom(0);
 
-  const result = room.isFull();
+  const isRoomFull = room.isFull();
 
-  ok(result);
+  ok(isRoomFull);
 });
 
 test.skip("empty room that fits one zombie is not full", () => {});
